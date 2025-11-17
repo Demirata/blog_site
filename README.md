@@ -1,1 +1,1 @@
-🔗 Live Demo: https://KULLANICIADIN.github.io/blog-site/
+🔗 Live Demo: https://Demirata.github.io/blog-site/
