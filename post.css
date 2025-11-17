@@ -1,0 +1,109 @@
+/* ===========================
+   POST SAYFALARI GENEL TASARIM
+   =========================== */
+
+/* Arkaplan */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f6f7fb;
+}
+
+/* Geri Tuşu */
+.back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    background: #05006e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: .3s ease;
+}
+
+.back-btn:hover {
+    background: #00d4ff;
+    color: #05006e;
+}
+
+/* Ana Post Kutusu */
+.post-container {
+    max-width: 800px;
+    background: #fff;
+    margin: 100px auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.12);
+}
+
+/* Kapak Fotoğrafı */
+.post-img {
+    width: 100%;
+    height: 500%;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+/* Başlık */
+.post-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #05006e;
+    margin-bottom: 8px;
+}
+
+/* Tarih */
+.post-date {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Paragraflar */
+.post-text {
+    font-size: 18px;
+    color: #222;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* İç başlık (h2) */
+.post-content h2 {
+    margin-top: 30px;
+    font-size: 24px;
+    color: #05006e;
+}
+
+/* Listeler */
+.post-content ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.post-content ul li {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+/* Responsive Tasarım */
+@media(max-width: 600px) {
+    .post-container {
+        padding: 20px;
+    }
+
+    .post-img {
+        height: 220px;
+    }
+
+    .post-title {
+        font-size: 24px;
+    }
+
+    .post-text {
+        font-size: 16px;
+    }
+}
