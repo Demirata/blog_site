@@ -107,3 +107,52 @@ body {
         font-size: 16px;
     }
 }
+
+/* ------------------------ */
+/*     POST SAYFASI CSS     */
+/* ------------------------ */
+
+/* Mobil düzen */
+@media (max-width: 700px) {
+    .post-container {
+        width: 92%;
+        margin: auto;
+        padding: 0;
+    }
+
+    .post-img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .post-title {
+        font-size: 26px;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .post-text {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    .back-btn {
+        font-size: 16px;
+        padding: 8px 14px;
+        margin: 15px;
+        display: inline-block;
+    }
+}
+
+/* Daha küçük telefonlar */
+@media (max-width: 480px) {
+    .post-title {
+        font-size: 22px;
+    }
+
+    .post-text {
+        font-size: 15px;
+    }
+}

@@ -18,17 +18,29 @@
     </div>
 
     <!-- NAVBAR -->
-    <header>
+    <header class="navbar">
         <div id="logo-div">
             <img src="img/TD_logo.png" alt="logo" class="logo">
         </div>
 
-        <nav>
+        <nav class="nav-links">
             <a href="index.html">ANA SAYFA</a>
-            <a href="about.html">HAKKINDA</a>
+            <a href="about.html" class="active">HAKKIMDA</a>
             <a href="iletişim.html">İLETİŞİM</a>
         </nav>
+
+        <!-- Mobil Menü Butonu -->
+        <div class="mobile-menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </header>
+
+    <!-- MOBİL MENÜ -->
+    <div class="mobile-menu">
+        <a href="index.html">ANA SAYFA</a>
+        <a href="about.html">HAKKIMDA</a>
+        <a href="iletişim.html">İLETİŞİM</a>
+    </div>
 
     <!-- HAKKIMDA ALANI -->
     <section class="about-section">
@@ -90,7 +102,17 @@
     
         </div>
     </footer>
-    
+
+    <script>
+        // Mobil menü aç/kapa
+        const btn = document.querySelector(".mobile-menu-btn");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+    </script>
+
 </body>
 
 </html>

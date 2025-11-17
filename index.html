@@ -10,28 +10,47 @@
     <title>BLOG</title>
 </head>
 
-<body>
+<body class="home-page">
 
-    <body class="home-page">
-
+    <!-- TOPBAR -->
     <div class="topbar">
-        <a href="https://www.instagram.com/tevfikdmrt/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/Demirata" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/tevfikdmrt/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/feed/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Demirata" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
     </div>
 
-    <header>
+    <!-- NAVBAR -->
+    <header class="navbar">
         <div id="logo-div">
             <img src="img/TD_logo.png" alt="logo" class="logo">
         </div>
 
-        <nav>
-            <a href="index.html">ANA SAYFA</a>
+        <nav class="nav-links">
+            <a href="index.html" class="active">ANA SAYFA</a>
             <a href="about.html">HAKKINDA</a>
             <a href="iletişim.html">İLETİŞİM</a>
         </nav>
+
+        <!-- Mobil Menü Butonu -->
+        <div class="mobile-menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </header>
 
+    <!-- MOBİL MENÜ -->
+    <div class="mobile-menu">
+        <a href="index.html">ANA SAYFA</a>
+        <a href="about.html">HAKKINDA</a>
+        <a href="iletişim.html">İLETİŞİM</a>
+    </div>
+
+    <!-- HERO -->
     <section class="hero">
         <div class="hero-content">
             <h1>Tevfik’in Bloguna Hoş Geldin</h1>
@@ -42,184 +61,179 @@
         </div>
     </section>
 
-
     <!-- FEATURED POST -->
-<section class="featured-post">
-    <div class="featured-image">
-        <img  class="anasayfa_fotosu" 
-         src="img/Kampüs Hayatı.jpg" alt="featured">
-    </div>
-
-    <div class="featured-content">
-        <h2>Kodlama: İlk Adımlar ve Öğrendiklerim</h2>
-        <p>
-            &nbsp;Yazılım öğrenmek sadece kod yazmaktan ibaret değil; merak, sabır ve keşfetme isteği gerektiren bir yolculuk.
-            <br>&nbsp;Bu blogda teknolojiyle kurduğum ilişkiyi, öğrendiğim ipuçlarını ve deneyimlerimi paylaşarak bu yolculuğu daha keyifli hale getirmeye çalışıyorum.
-        </p>
-        
-    </div>
-
-</section>
-
-<section id="posts" class="posts">
-    <div><h2>İÇERİKLER</h2></div>
-
-    <div class="post-container">
-
-        <div class="post-card" data-category="Kişisel Gelişim">
-            <img src="img/unnamed.jpg" alt="">
-            <h3>Eğitim yolculuğum</h3>
-            <p>Eğitim Hayatım</p>
-            <a href="post1.html" class="readmore">Devamını Oku</a>
-        </div>
-        
-        <div class="post-card" data-category="Yazılım">
-            <img src="img/unnamed (1).jpg">
-            <h3>Yazılıma İlk Adım</h3>
-            <p>Yazılıma başlama hikayem</p>
-            <a href="post2.html" class="readmore">Devamını Oku</a>
-        </div>
-        
-        <div class="post-card" data-category="Yazılım">
-            <img src="img/unnamed (2).jpg">
-            <h3>Web Tasarıma Nasıl Başladım</h3>
-            <p>Web tasarıma ilgim</p>
-            <a href="post3.html" class="readmore">Devamını Oku</a>
-        </div>
-        
-        <div class="post-card" data-category="Yazılım" data-category="Web Tasarım">
-            <img src="img/unnamed (3).jpg">
-            <h3>Kullandığım Yazılım Araçları</h3>
-            <p>Yazılımda kullandıklarım</p>
-            <a href="post4.html" class="readmore">Devamını Oku</a>
-        </div>
-        
-        <div class="post-card" data-category="Kişisel Gelişim">
-            <img src="img/unnamed (4).jpg">
-            <h3>Öğrenme Sürecinden Notlar</h3>
-            <p>Daha iyi kod yazmak için ipuçları</p>
-            <a href="post5.html" class="readmore">Devamını Oku</a>
-        </div>
-        
-        <div class="post-card" data-category="Kişisel Gelişim">
-            <img src="img/unnamed (5).jpg"">
-            <h3>Hedeflerim</h3>
-            <p>Gelecek planlarım</p>
-            <a href="post6.html" class="readmore">Devamını Oku</a>
-        </div>
-        
-
-    </div>
-</section>
-
-<section class="categories">
-
-    <h2>Kategoriler</h2>
-
-    <div class="category-container">
-
-        <div class="category-card" data-filter="all">
-            <i class="fa-solid fa-list"></i>
-            <span>Hepsi</span>
+    <section class="featured-post">
+        <div class="featured-image">
+            <img class="anasayfa_fotosu" src="img/Kampüs Hayatı.jpg" alt="featured">
         </div>
 
-        <div class="category-card" data-filter="yazilim">
-            <i class="fa-solid fa-code"></i>
-            <span>Yazılım</span>
+        <div class="featured-content">
+            <h2>Kodlama: İlk Adımlar ve Öğrendiklerim</h2>
+            <p>
+                Yazılım öğrenmek sadece kod yazmaktan ibaret değil; merak, sabır ve keşfetme isteği gerektiren bir yolculuk.
+                Bu blogda teknolojiyle kurduğum ilişkiyi, öğrendiğim ipuçlarını ve deneyimlerimi paylaşıyorum.
+            </p>
         </div>
 
-        <div class="category-card" data-filter="web">
-            <i class="fa-solid fa-laptop-code"></i>
-            <span>Web Tasarım</span>
+    </section>
+
+    <!-- POSTS -->
+    <section id="posts" class="posts">
+        <h2>İÇERİKLER</h2>
+
+        <div class="post-container">
+
+            <div class="post-card" data-category="kişisel">
+                <img src="img/unnamed.jpg" alt="">
+                <h3>Eğitim yolculuğum</h3>
+                <p>Eğitim Hayatım</p>
+                <a href="post1.html" class="readmore">Devamını Oku</a>
+            </div>
+
+            <div class="post-card" data-category="yazılım">
+                <img src="img/unnamed (1).jpg">
+                <h3>Yazılıma İlk Adım</h3>
+                <p>Yazılıma başlama hikayem</p>
+                <a href="post2.html" class="readmore">Devamını Oku</a>
+            </div>
+
+            <div class="post-card" data-category="web">
+                <img src="img/unnamed (2).jpg">
+                <h3>Web Tasarıma Nasıl Başladım</h3>
+                <p>Web tasarıma ilgim</p>
+                <a href="post3.html" class="readmore">Devamını Oku</a>
+            </div>
+
+            <div class="post-card" data-category="yazılım">
+                <img src="img/unnamed (3).jpg">
+                <h3>Kullandığım Yazılım Araçları</h3>
+                <p>Yazılımda kullandıklarım</p>
+                <a href="post4.html" class="readmore">Devamını Oku</a>
+            </div>
+
+            <div class="post-card" data-category="kişisel">
+                <img src="img/unnamed (4).jpg">
+                <h3>Öğrenme Sürecinden Notlar</h3>
+                <p>Daha iyi kod yazmak için ipuçları</p>
+                <a href="post5.html" class="readmore">Devamını Oku</a>
+            </div>
+
+            <div class="post-card" data-category="kişisel">
+                <img src="img/unnamed (5).jpg">
+                <h3>Hedeflerim</h3>
+                <p>Gelecek planlarım</p>
+                <a href="post6.html" class="readmore">Devamını Oku</a>
+            </div>
+
         </div>
+    </section>
 
-        <div class="category-card" data-filter="gelisim">
-            <i class="fa-solid fa-lightbulb"></i>
-            <span>Kişisel Gelişim</span>
+    <!-- KATEGORİLER -->
+    <section class="categories">
+        <h2>Kategoriler</h2>
+
+        <div class="category-container">
+            <div class="category-card" data-filter="all">
+                <i class="fa-solid fa-list"></i>
+                <span>Hepsi</span>
+            </div>
+
+            <div class="category-card" data-filter="yazılım">
+                <i class="fa-solid fa-code"></i>
+                <span>Yazılım</span>
+            </div>
+
+            <div class="category-card" data-filter="web">
+                <i class="fa-solid fa-laptop-code"></i>
+                <span>Web Tasarım</span>
+            </div>
+
+            <div class="category-card" data-filter="kişisel">
+                <i class="fa-solid fa-lightbulb"></i>
+                <span>Kişisel Gelişim</span>
+            </div>
+
         </div>
+    </section>
 
-        <div class="category-card" data-filter="teknoloji">
-            <i class="fa-solid fa-robot"></i>
-            <span>Teknoloji</span>
-        </div>
-
-    </div>
-</section>
-
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-content">
-    
             <div class="footer-left">
                 <p>© 2025 Tevfik Can Demirata – Tüm Hakları Saklıdır.</p>
             </div>
-    
+
             <div class="footer-social">
                 <a href="https://www.instagram.com/tevfikdmrt/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/Demirata" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
-    
         </div>
     </footer>
-    
+
     <!-- LIGHTBOX -->
-<div id="lightbox" class="lightbox">
-    <span class="close-lightbox">&times;</span>
-    <img id="lightbox-img" src="">
-</div>
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img id="lightbox-img" src="">
+    </div>
 
-<script>
-    // Tüm posta kartı resimlerini seç
-    const postImages = document.querySelectorAll('.post-card img');
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-    const closeBtn = document.querySelector('.close-lightbox');
+    <!-- POST IMG LIGHTBOX -->
+    <script>
+        const postImages = document.querySelectorAll('.post-card img');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const closeBtn = document.querySelector('.close-lightbox');
 
-    // Her fotoğraf tıklanınca büyük aç
-    postImages.forEach(img => {
-        img.addEventListener('click', () => {
-            lightbox.style.display = 'block';
-            lightboxImg.src = img.src;
-        });
-    });
-
-    // Kapatma butonu
-    closeBtn.addEventListener('click', () => {
-        lightbox.style.display = 'none';
-    });
-
-    // Karanlık alan tıklanınca kapanma
-    lightbox.addEventListener('click', (e) => {
-        if (e.target === lightbox) {
-            lightbox.style.display = 'none';
-        }
-    });
-</script>
-
-<script>
-    const filterButtons = document.querySelectorAll('.category-card');
-    const cards = document.querySelectorAll('.post-card');
-
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            // Seçilen kategori
-            const filter = button.getAttribute('data-filter');
-
-            cards.forEach(card => {
-                const category = card.getAttribute('data-category');
-
-                if (filter === "all" || filter === category) {
-                    card.style.display = "block";
-                } else {
-                    card.style.display = "none";
-                }
+        postImages.forEach(img => {
+            img.addEventListener('click', () => {
+                lightbox.style.display = 'block';
+                lightboxImg.src = img.src;
             });
         });
-    });
-</script>
 
+        closeBtn.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
 
-    
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+    </script>
+
+    <!-- KATEGORİ FİLTRE -->
+    <script>
+        const filterButtons = document.querySelectorAll('.category-card');
+        const cards = document.querySelectorAll('.post-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter');
+
+                cards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+
+                    if (filter === "all" || filter === category) {
+                        card.style.display = "block";
+                    } else {
+                        card.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+
+    <!-- MOBİL MENÜ -->
+    <script>
+        const btn = document.querySelector(".mobile-menu-btn");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+    </script>
+
 </body>
 
 </html>

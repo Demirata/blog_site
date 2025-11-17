@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
     <title>İletişim</title>
-
 </head>
 
 <body>
@@ -19,31 +18,43 @@
     </div>
 
     <!-- NAVBAR -->
-    <header>
+    <header class="navbar">
         <div id="logo-div">
             <img src="img/TD_logo.png" alt="logo" class="logo">
         </div>
 
-        <nav>
+        <nav class="nav-links">
             <a href="index.html">ANA SAYFA</a>
             <a href="about.html">HAKKINDA</a>
-            <a href="iletişim.html">İLETİŞİM</a>
+            <a href="iletişim.html" class="active">İLETİŞİM</a>
         </nav>
+
+        <!-- Mobil Menü Butonu -->
+        <div class="mobile-menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </header>
 
+    <!-- MOBİL MENÜ -->
+    <div class="mobile-menu">
+        <a href="index.html">ANA SAYFA</a>
+        <a href="about.html">HAKKINDA</a>
+        <a href="iletişim.html">İLETİŞİM</a>
+    </div>
+
+    <!-- İLETİŞİM BİLGİLERİ -->
     <section class="contact-info-section">
 
         <h1>İLETİŞİM BİLGİLERİ</h1>
-    
+
         <div class="contact-info-list">
             <p><i class="fa-solid fa-envelope"></i> tefik61@outlook.com</p>
             <p><i class="fa-solid fa-phone"></i> 0541 945 66 25</p>
-            <p><i class="fa-brands fa-instagram"></i>  @tevfikdmrt</p>
-            <p><i class="fa-brands fa-linkedin"></i>  linkedin.com/in/tevfikdmrt</p>
+            <p><i class="fa-brands fa-instagram"></i> @tevfikdmrt</p>
+            <p><i class="fa-brands fa-linkedin"></i> linkedin.com/in/tevfikdmrt</p>
         </div>
-    
+
     </section>
-    
 
     <!-- İLETİŞİM FORMU -->
     <section class="contact-section">
@@ -51,34 +62,46 @@
         <p class="contact-desc">
             Aşağıdaki form üzerinden bana mesaj gönderebilirsin.  
         </p>
+
         <form class="contact-form">
 
             <input type="text" placeholder="Ad Soyad" required>
             <input type="email" placeholder="Email" required>
-            <textarea  placeholder="Mesajın..." required></textarea>
+            <textarea placeholder="Mesajın..." required></textarea>
 
             <button type="submit">Gönder</button>
 
         </form>
-        
 
     </section>
+
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-content">
-    
+
             <div class="footer-left">
                 <p>© 2025 Tevfik Can Demirata – Tüm Hakları Saklıdır.</p>
             </div>
-    
+
             <div class="footer-social">
                 <a href="https://www.instagram.com/tevfikdmrt/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/Demirata" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
-    
+
         </div>
     </footer>
-    
+
+    <script>
+        // Mobil menü aç/kapa
+        const btn = document.querySelector(".mobile-menu-btn");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+    </script>
+
 </body>
 
 </html>
