@@ -1,1 +1,2 @@
-🔗 Live Demo: https://Demirata.github.io/blog_site/
+## 🔗 Live Site
+https://demirata.github.io/blog_site/
